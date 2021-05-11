@@ -1,0 +1,83 @@
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~
+$ cd Assignments
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (master)
+$ git branch css-assignments
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (master)
+$ git checkout css-assignments
+Switched to branch 'css-assignments'
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (css-assignments)
+$ git add .
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (css-assignments)
+$ git commit -m "added added css files"
+[css-assignments 2107612] added added css files
+ 2 files changed, 10 insertions(+)
+ create mode 100644 css file 1.txt
+ create mode 100644 css file.txt
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (css-assignments)
+$ git add .
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (css-assignments)
+$ git commit -m "added added css files"
+[css-assignments f6ce75c] added added css files
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (master)
+$ git add .
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (master)
+$ git commit -m " added css files"
+[master 520d0dc]  added css files
+ 1 file changed, 1 insertion(+)
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (master)
+$ git checkout css-assignments
+Switched to branch 'css-assignments'
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (css-assignments)
+$ git add .
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (css-assignments)
+$ git commit -m " edited css files"
+[css-assignments ca963ce]  edited css files
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (css-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (master)
+$ git merge css-assignments
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (master|MERGING)
+$ git branch -d css-assignments
+error: The branch 'css-assignments' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D css-assignments'.
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (master|MERGING)
+$ git add .
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (master|MERGING)
+$ git commit -m " edited css files"
+[master 39e2b52]  edited css files
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (master)
+$ git merge css-assignments
+Already up to date.
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (master)
+$ git branch -d css-assignments
+Deleted branch css-assignments (was ca963ce).
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (master)

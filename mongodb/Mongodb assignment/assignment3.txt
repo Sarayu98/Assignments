@@ -1,0 +1,1822 @@
+use restaurants
+'switched to db restaurants'
+db.addresses.find()
+{ _id: ObjectId("6078771c17f84c1204c77253"),
+  address: 
+   { building: '18',
+     coord: [ -73.996984, 40.72589 ],
+     street: 'West Houston Street',
+     zipcode: '10012' },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-04-03T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2013-04-05T00:00:00.000Z, grade: 'A', score: 4 },
+     { date: 2012-03-21T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2011-04-27T00:00:00.000Z, grade: 'A', score: 5 } ],
+  name: 'Angelika Film Center',
+  restaurant_id: '40362274' }
+{ _id: ObjectId("6078771c17f84c1204c7723e"),
+  address: 
+   { building: '97-22',
+     coord: [ -73.8601152, 40.7311739 ],
+     street: '63 Road',
+     zipcode: '11374' },
+  borough: 'Queens',
+  cuisine: 'Jewish/Kosher',
+  grades: 
+   [ { date: 2014-11-24T00:00:00.000Z, grade: 'Z', score: 20 },
+     { date: 2013-01-17T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-08-02T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2011-12-15T00:00:00.000Z, grade: 'B', score: 25 } ],
+  name: 'Tov Kosher Kitchen',
+  restaurant_id: '40356068' }
+{ _id: ObjectId("6078771c17f84c1204c77247"),
+  address: 
+   { building: '1',
+     coord: [ -73.96926909999999, 40.7685235 ],
+     street: 'East   66 Street',
+     zipcode: '10065' },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-05-07T00:00:00.000Z, grade: 'A', score: 3 },
+     { date: 2013-05-03T00:00:00.000Z, grade: 'A', score: 4 },
+     { date: 2012-04-30T00:00:00.000Z, grade: 'A', score: 6 },
+     { date: 2011-12-27T00:00:00.000Z, grade: 'A', score: 0 } ],
+  name: '1 East 66Th Street Kitchen',
+  restaurant_id: '40359480' }
+{ _id: ObjectId("6078771c17f84c1204c77241"),
+  address: 
+   { building: '7114',
+     coord: [ -73.9068506, 40.6199034 ],
+     street: 'Avenue U',
+     zipcode: '11234' },
+  borough: 'Brooklyn',
+  cuisine: 'Delicatessen',
+  grades: 
+   [ { date: 2014-05-29T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2014-01-14T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2013-08-03T00:00:00.000Z, grade: 'A', score: 8 },
+     { date: 2012-07-18T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2012-03-09T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2011-10-14T00:00:00.000Z, grade: 'A', score: 9 } ],
+  name: 'Wilken\'S Fine Food',
+  restaurant_id: '40356483' }
+{ _id: ObjectId("6078771c17f84c1204c77270"),
+  address: 
+   { building: '203',
+     coord: [ -74.15235919999999, 40.5563756 ],
+     street: 'Giffords Lane',
+     zipcode: '10308' },
+  borough: 'Staten Island',
+  cuisine: 'Delicatessen',
+  grades: 
+   [ { date: 2015-01-05T00:00:00.000Z, grade: 'A', score: 4 },
+     { date: 2014-09-11T00:00:00.000Z, grade: 'C', score: 39 },
+     { date: 2014-03-20T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-01-24T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-05-23T00:00:00.000Z, grade: 'A', score: 10 } ],
+  name: 'B & M Hot Bagel & Grocery',
+  restaurant_id: '40364299' }
+{ _id: ObjectId("6078771c17f84c1204c7728a"),
+  address: 
+   { building: '156-71',
+     coord: [ -73.840437, 40.6627235 ],
+     street: 'Crossbay Boulevard',
+     zipcode: '11414' },
+  borough: 'Queens',
+  cuisine: 'Pizza/Italian',
+  grades: 
+   [ { date: 2014-10-29T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2013-10-30T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2013-06-12T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2012-03-27T00:00:00.000Z, grade: 'A', score: 9 } ],
+  name: 'New Park Pizzeria & Restaurant',
+  restaurant_id: '40364744' }
+{ _id: ObjectId("6078771c17f84c1204c7728d"),
+  address: 
+   { building: '461',
+     coord: [ -74.002944, 40.652779 ],
+     street: '37 Street',
+     zipcode: '11232' },
+  borough: 'Brooklyn',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-11-28T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-12-04T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-12-06T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2011-12-06T00:00:00.000Z, grade: 'A', score: 12 } ],
+  name: 'Melody Lanes',
+  restaurant_id: '40364889' }
+{ _id: ObjectId("6078771c17f84c1204c772a0"),
+  address: 
+   { building: '15',
+     coord: [ -73.98126069999999, 40.7547107 ],
+     street: 'West   43 Street',
+     zipcode: '10036' },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2015-01-15T00:00:00.000Z, grade: 'A', score: 7 },
+     { date: 2014-07-07T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2014-01-14T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2013-07-19T00:00:00.000Z, grade: 'C', score: 29 },
+     { date: 2013-02-05T00:00:00.000Z, grade: 'A', score: 12 } ],
+  name: 'The Princeton Club',
+  restaurant_id: '40365361' }
+{ _id: ObjectId("6078771c17f84c1204c772a7"),
+  address: 
+   { building: '72',
+     coord: [ -73.92506, 40.8275556 ],
+     street: 'East  161 Street',
+     zipcode: '10451' },
+  borough: 'Bronx',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-04-15T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2013-11-14T00:00:00.000Z, grade: 'A', score: 4 },
+     { date: 2013-07-29T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2012-12-31T00:00:00.000Z, grade: 'B', score: 15 },
+     { date: 2012-05-30T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-01-09T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2011-08-15T00:00:00.000Z, grade: 'C', score: 37 } ],
+  name: 'Yankee Tavern',
+  restaurant_id: '40365499' }
+{ _id: ObjectId("6078771c17f84c1204c772b3"),
+  address: 
+   { building: '319321',
+     coord: [ -73.988948, 40.760337 ],
+     street: '323 W. 46Th St.',
+     zipcode: '10036' },
+  borough: 'Manhattan',
+  cuisine: 'Italian',
+  grades: 
+   [ { date: 2014-05-13T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-11-12T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-04-27T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2011-12-07T00:00:00.000Z, grade: 'A', score: 7 } ],
+  name: 'Barbetta Restaurant',
+  restaurant_id: '40365726' }
+{ _id: ObjectId("6078771c17f84c1204c772ba"),
+  address: 
+   { building: '331',
+     coord: [ -73.87786539999999, 40.8724377 ],
+     street: 'East  204 Street',
+     zipcode: '10467' },
+  borough: 'Bronx',
+  cuisine: 'Irish',
+  grades: 
+   [ { date: 2014-08-26T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2014-03-26T00:00:00.000Z, grade: 'B', score: 23 },
+     { date: 2013-09-11T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-12-18T00:00:00.000Z, grade: 'B', score: 27 },
+     { date: 2011-10-20T00:00:00.000Z, grade: 'A', score: 13 } ],
+  name: 'Mcdwyers Pub',
+  restaurant_id: '40365893' }
+{ _id: ObjectId("6078771c17f84c1204c772c1"),
+  address: 
+   { building: '10807',
+     coord: [ -73.8299395, 40.5812137 ],
+     street: 'Rockaway Beach Boulevard',
+     zipcode: '11694' },
+  borough: 'Queens',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-01-29T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2013-06-26T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2012-06-27T00:00:00.000Z, grade: 'A', score: 7 },
+     { date: 2012-01-31T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2011-02-08T00:00:00.000Z, grade: 'A', score: 8 } ],
+  name: 'Healy\'S Pub',
+  restaurant_id: '40366054' }
+{ _id: ObjectId("6078771c17f84c1204c772cf"),
+  address: 
+   { building: '6828',
+     coord: [ -73.8204154, 40.7242443 ],
+     street: 'Main Street',
+     zipcode: '11367' },
+  borough: 'Queens',
+  cuisine: 'Jewish/Kosher',
+  grades: 
+   [ { date: 2014-09-24T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2014-03-10T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2013-05-31T00:00:00.000Z, grade: 'B', score: 26 },
+     { date: 2012-05-10T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2011-11-03T00:00:00.000Z, grade: 'A', score: 11 } ],
+  name: 'Naomi Kosher Pizza',
+  restaurant_id: '40366425' }
+{ _id: ObjectId("6078771c17f84c1204c772dd"),
+  address: 
+   { building: '84',
+     coord: [ -73.9300062, 40.5943553 ],
+     street: 'Ebony Court',
+     zipcode: '11229' },
+  borough: 'Brooklyn',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-05-21T00:00:00.000Z, grade: 'A', score: 7 },
+     { date: 2013-05-21T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-06-06T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2012-02-01T00:00:00.000Z, grade: 'A', score: 9 } ],
+  name: 'Tamaqua',
+  restaurant_id: '40366742' }
+{ _id: ObjectId("6078771c17f84c1204c772e6"),
+  address: 
+   { building: '617',
+     coord: [ -73.9681178, 40.678776 ],
+     street: 'Vanderbilt Avenue',
+     zipcode: '11238' },
+  borough: 'Brooklyn',
+  cuisine: 'Soul Food',
+  grades: 
+   [ { date: 2014-08-28T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2014-03-27T00:00:00.000Z, grade: 'C', score: 2 },
+     { date: 2013-07-17T00:00:00.000Z, grade: 'B', score: 25 },
+     { date: 2012-05-17T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2011-12-21T00:00:00.000Z, grade: 'A', score: 8 } ],
+  name: 'Mitchell\'S Restaurant',
+  restaurant_id: '40366961' }
+{ _id: ObjectId("6078771c17f84c1204c772f6"),
+  address: 
+   { building: '180',
+     coord: [ -73.9788694, 40.7665961 ],
+     street: 'Central Park South',
+     zipcode: '10019' },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-04-15T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2013-10-23T00:00:00.000Z, grade: 'A', score: 3 },
+     { date: 2013-02-01T00:00:00.000Z, grade: 'B', score: 22 },
+     { date: 2011-11-30T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2011-07-19T00:00:00.000Z, grade: 'B', score: 17 } ],
+  name: 'Cocktail Room (Nyac)',
+  restaurant_id: '40367339' }
+{ _id: ObjectId("6078771c17f84c1204c77304"),
+  address: 
+   { building: '984',
+     coord: [ -73.9672945, 40.7561212 ],
+     street: 'Second Avenue',
+     zipcode: '10022' },
+  borough: 'Manhattan',
+  cuisine: 'Italian',
+  grades: 
+   [ { date: 2014-05-20T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2013-03-08T00:00:00.000Z, grade: 'A', score: 2 },
+     { date: 2012-02-13T00:00:00.000Z, grade: 'A', score: 12 } ],
+  name: 'Mimis Restaurant & Bar',
+  restaurant_id: '40367728' }
+{ _id: ObjectId("6078771c17f84c1204c77313"),
+  address: 
+   { building: '2300',
+     coord: [ -73.8786113, 40.8502883 ],
+     street: 'Southern Boulevard',
+     zipcode: '10460' },
+  borough: 'Bronx',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-05-21T00:00:00.000Z, grade: 'A', score: 2 },
+     { date: 2013-05-22T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2012-05-17T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2011-06-08T00:00:00.000Z, grade: 'A', score: 5 } ],
+  name: 'Cool Zone',
+  restaurant_id: '40368022' }
+{ _id: ObjectId("6078771c17f84c1204c77321"),
+  address: 
+   { building: '603',
+     coord: [ -73.9765607, 40.7443236 ],
+     street: '2 Avenue',
+     zipcode: '10016' },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-12-08T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2014-06-17T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-10-15T00:00:00.000Z, grade: 'A', score: 8 },
+     { date: 2013-02-07T00:00:00.000Z, grade: 'B', score: 17 },
+     { date: 2012-08-01T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2012-02-23T00:00:00.000Z, grade: 'B', score: 16 } ],
+  name: 'Benjamin',
+  restaurant_id: '40368370' }
+{ _id: ObjectId("6078771c17f84c1204c7732b"),
+  address: 
+   { building: '180',
+     coord: [ -74.002139, 40.7261357 ],
+     street: 'Prince Street',
+     zipcode: '10012' },
+  borough: 'Manhattan',
+  cuisine: 'French',
+  grades: 
+   [ { date: 2014-02-25T00:00:00.000Z, grade: 'A', score: 6 },
+     { date: 2013-08-13T00:00:00.000Z, grade: 'A', score: 3 },
+     { date: 2013-02-19T00:00:00.000Z, grade: 'B', score: 18 },
+     { date: 2012-04-05T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2011-09-28T00:00:00.000Z, grade: 'A', score: 9 } ],
+  name: 'Raouls',
+  restaurant_id: '40368752' }
+Type "it" for more
+db.rest.find({}, {_id:1, name:1, cuisine: 1, borough: 1, restaurant_id: 1})
+db.addresses.find({}, {_id:1, name:1, cuisine: 1, borough: 1, restaurant_id: 1})
+{ _id: ObjectId("6078771c17f84c1204c77253"),
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Angelika Film Center',
+  restaurant_id: '40362274' }
+{ _id: ObjectId("6078771c17f84c1204c7723e"),
+  borough: 'Queens',
+  cuisine: 'Jewish/Kosher',
+  name: 'Tov Kosher Kitchen',
+  restaurant_id: '40356068' }
+{ _id: ObjectId("6078771c17f84c1204c77247"),
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: '1 East 66Th Street Kitchen',
+  restaurant_id: '40359480' }
+{ _id: ObjectId("6078771c17f84c1204c77241"),
+  borough: 'Brooklyn',
+  cuisine: 'Delicatessen',
+  name: 'Wilken\'S Fine Food',
+  restaurant_id: '40356483' }
+{ _id: ObjectId("6078771c17f84c1204c77270"),
+  borough: 'Staten Island',
+  cuisine: 'Delicatessen',
+  name: 'B & M Hot Bagel & Grocery',
+  restaurant_id: '40364299' }
+{ _id: ObjectId("6078771c17f84c1204c7728a"),
+  borough: 'Queens',
+  cuisine: 'Pizza/Italian',
+  name: 'New Park Pizzeria & Restaurant',
+  restaurant_id: '40364744' }
+{ _id: ObjectId("6078771c17f84c1204c7728d"),
+  borough: 'Brooklyn',
+  cuisine: 'American ',
+  name: 'Melody Lanes',
+  restaurant_id: '40364889' }
+{ _id: ObjectId("6078771c17f84c1204c772a0"),
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'The Princeton Club',
+  restaurant_id: '40365361' }
+{ _id: ObjectId("6078771c17f84c1204c772a7"),
+  borough: 'Bronx',
+  cuisine: 'American ',
+  name: 'Yankee Tavern',
+  restaurant_id: '40365499' }
+{ _id: ObjectId("6078771c17f84c1204c772b3"),
+  borough: 'Manhattan',
+  cuisine: 'Italian',
+  name: 'Barbetta Restaurant',
+  restaurant_id: '40365726' }
+{ _id: ObjectId("6078771c17f84c1204c772ba"),
+  borough: 'Bronx',
+  cuisine: 'Irish',
+  name: 'Mcdwyers Pub',
+  restaurant_id: '40365893' }
+{ _id: ObjectId("6078771c17f84c1204c772c1"),
+  borough: 'Queens',
+  cuisine: 'American ',
+  name: 'Healy\'S Pub',
+  restaurant_id: '40366054' }
+{ _id: ObjectId("6078771c17f84c1204c772cf"),
+  borough: 'Queens',
+  cuisine: 'Jewish/Kosher',
+  name: 'Naomi Kosher Pizza',
+  restaurant_id: '40366425' }
+{ _id: ObjectId("6078771c17f84c1204c772dd"),
+  borough: 'Brooklyn',
+  cuisine: 'American ',
+  name: 'Tamaqua',
+  restaurant_id: '40366742' }
+{ _id: ObjectId("6078771c17f84c1204c772e6"),
+  borough: 'Brooklyn',
+  cuisine: 'Soul Food',
+  name: 'Mitchell\'S Restaurant',
+  restaurant_id: '40366961' }
+{ _id: ObjectId("6078771c17f84c1204c772f6"),
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Cocktail Room (Nyac)',
+  restaurant_id: '40367339' }
+{ _id: ObjectId("6078771c17f84c1204c77304"),
+  borough: 'Manhattan',
+  cuisine: 'Italian',
+  name: 'Mimis Restaurant & Bar',
+  restaurant_id: '40367728' }
+{ _id: ObjectId("6078771c17f84c1204c77313"),
+  borough: 'Bronx',
+  cuisine: 'American ',
+  name: 'Cool Zone',
+  restaurant_id: '40368022' }
+{ _id: ObjectId("6078771c17f84c1204c77321"),
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Benjamin',
+  restaurant_id: '40368370' }
+{ _id: ObjectId("6078771c17f84c1204c7732b"),
+  borough: 'Manhattan',
+  cuisine: 'French',
+  name: 'Raouls',
+  restaurant_id: '40368752' }
+Type "it" for more
+db.addresses.find({}, {_id:0, name:1, cuisine: 1, borough: 1, restaurant_id: 1, "address.zipcode": 1})
+{ address: { zipcode: '10012' },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Angelika Film Center',
+  restaurant_id: '40362274' }
+{ address: { zipcode: '11374' },
+  borough: 'Queens',
+  cuisine: 'Jewish/Kosher',
+  name: 'Tov Kosher Kitchen',
+  restaurant_id: '40356068' }
+{ address: { zipcode: '10065' },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: '1 East 66Th Street Kitchen',
+  restaurant_id: '40359480' }
+{ address: { zipcode: '11234' },
+  borough: 'Brooklyn',
+  cuisine: 'Delicatessen',
+  name: 'Wilken\'S Fine Food',
+  restaurant_id: '40356483' }
+{ address: { zipcode: '10308' },
+  borough: 'Staten Island',
+  cuisine: 'Delicatessen',
+  name: 'B & M Hot Bagel & Grocery',
+  restaurant_id: '40364299' }
+{ address: { zipcode: '11414' },
+  borough: 'Queens',
+  cuisine: 'Pizza/Italian',
+  name: 'New Park Pizzeria & Restaurant',
+  restaurant_id: '40364744' }
+{ address: { zipcode: '11232' },
+  borough: 'Brooklyn',
+  cuisine: 'American ',
+  name: 'Melody Lanes',
+  restaurant_id: '40364889' }
+{ address: { zipcode: '10036' },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'The Princeton Club',
+  restaurant_id: '40365361' }
+{ address: { zipcode: '10451' },
+  borough: 'Bronx',
+  cuisine: 'American ',
+  name: 'Yankee Tavern',
+  restaurant_id: '40365499' }
+{ address: { zipcode: '10036' },
+  borough: 'Manhattan',
+  cuisine: 'Italian',
+  name: 'Barbetta Restaurant',
+  restaurant_id: '40365726' }
+{ address: { zipcode: '10467' },
+  borough: 'Bronx',
+  cuisine: 'Irish',
+  name: 'Mcdwyers Pub',
+  restaurant_id: '40365893' }
+{ address: { zipcode: '11694' },
+  borough: 'Queens',
+  cuisine: 'American ',
+  name: 'Healy\'S Pub',
+  restaurant_id: '40366054' }
+{ address: { zipcode: '11367' },
+  borough: 'Queens',
+  cuisine: 'Jewish/Kosher',
+  name: 'Naomi Kosher Pizza',
+  restaurant_id: '40366425' }
+{ address: { zipcode: '11229' },
+  borough: 'Brooklyn',
+  cuisine: 'American ',
+  name: 'Tamaqua',
+  restaurant_id: '40366742' }
+{ address: { zipcode: '11238' },
+  borough: 'Brooklyn',
+  cuisine: 'Soul Food',
+  name: 'Mitchell\'S Restaurant',
+  restaurant_id: '40366961' }
+{ address: { zipcode: '10019' },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Cocktail Room (Nyac)',
+  restaurant_id: '40367339' }
+{ address: { zipcode: '10022' },
+  borough: 'Manhattan',
+  cuisine: 'Italian',
+  name: 'Mimis Restaurant & Bar',
+  restaurant_id: '40367728' }
+{ address: { zipcode: '10460' },
+  borough: 'Bronx',
+  cuisine: 'American ',
+  name: 'Cool Zone',
+  restaurant_id: '40368022' }
+{ address: { zipcode: '10016' },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Benjamin',
+  restaurant_id: '40368370' }
+{ address: { zipcode: '10012' },
+  borough: 'Manhattan',
+  cuisine: 'French',
+  name: 'Raouls',
+  restaurant_id: '40368752' }
+Type "it" for more
+db.rest.find({"borough" : "Bronx"}).pretty()
+db.addresses.find({"borough" : "Bronx"}).pretty()
+{ _id: ObjectId("6078771c17f84c1204c772a7"),
+  address: 
+   { building: '72',
+     coord: [ -73.92506, 40.8275556 ],
+     street: 'East  161 Street',
+     zipcode: '10451' },
+  borough: 'Bronx',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-04-15T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2013-11-14T00:00:00.000Z, grade: 'A', score: 4 },
+     { date: 2013-07-29T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2012-12-31T00:00:00.000Z, grade: 'B', score: 15 },
+     { date: 2012-05-30T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-01-09T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2011-08-15T00:00:00.000Z, grade: 'C', score: 37 } ],
+  name: 'Yankee Tavern',
+  restaurant_id: '40365499' }
+{ _id: ObjectId("6078771c17f84c1204c772ba"),
+  address: 
+   { building: '331',
+     coord: [ -73.87786539999999, 40.8724377 ],
+     street: 'East  204 Street',
+     zipcode: '10467' },
+  borough: 'Bronx',
+  cuisine: 'Irish',
+  grades: 
+   [ { date: 2014-08-26T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2014-03-26T00:00:00.000Z, grade: 'B', score: 23 },
+     { date: 2013-09-11T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-12-18T00:00:00.000Z, grade: 'B', score: 27 },
+     { date: 2011-10-20T00:00:00.000Z, grade: 'A', score: 13 } ],
+  name: 'Mcdwyers Pub',
+  restaurant_id: '40365893' }
+{ _id: ObjectId("6078771c17f84c1204c77313"),
+  address: 
+   { building: '2300',
+     coord: [ -73.8786113, 40.8502883 ],
+     street: 'Southern Boulevard',
+     zipcode: '10460' },
+  borough: 'Bronx',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-05-21T00:00:00.000Z, grade: 'A', score: 2 },
+     { date: 2013-05-22T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2012-05-17T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2011-06-08T00:00:00.000Z, grade: 'A', score: 5 } ],
+  name: 'Cool Zone',
+  restaurant_id: '40368022' }
+{ _id: ObjectId("6078771c17f84c1204c7733d"),
+  address: 
+   { building: '591',
+     coord: [ -73.790804, 40.8541848 ],
+     street: 'City Island Ave',
+     zipcode: '10464' },
+  borough: 'Bronx',
+  cuisine: 'Seafood',
+  grades: 
+   [ { date: 2014-12-11T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2014-06-07T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-11-09T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-04-16T00:00:00.000Z, grade: 'B', score: 22 },
+     { date: 2012-02-29T00:00:00.000Z, grade: 'A', score: 9 } ],
+  name: 'Seashore Restaurant',
+  restaurant_id: '40369299' }
+{ _id: ObjectId("6078771c17f84c1204c7734a"),
+  address: 
+   { building: '2',
+     coord: [ -73.7826735, 40.8377713 ],
+     street: 'City Island Ave',
+     zipcode: '10464' },
+  borough: 'Bronx',
+  cuisine: 'Seafood',
+  grades: 
+   [ { date: 2014-05-17T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2013-06-24T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2012-05-10T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2011-05-23T00:00:00.000Z, grade: 'A', score: 12 } ],
+  name: 'Johnny\'S Reef Restaurant',
+  restaurant_id: '40369641' }
+{ _id: ObjectId("6078771c17f84c1204c773b5"),
+  address: 
+   { building: '5655',
+     coord: [ -73.90401159999999, 40.8803571 ],
+     street: 'Broadway',
+     zipcode: '10463' },
+  borough: 'Bronx',
+  cuisine: 'Pancakes/Waffles',
+  grades: 
+   [ { date: 2014-08-08T00:00:00.000Z, grade: 'A', score: 3 },
+     { date: 2014-03-11T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-09-04T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2013-01-28T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2012-07-31T00:00:00.000Z, grade: 'A', score: 8 },
+     { date: 2012-03-13T00:00:00.000Z, grade: 'B', score: 21 } ],
+  name: 'Ihop',
+  restaurant_id: '40373938' }
+{ _id: ObjectId("6078771c17f84c1204c77277"),
+  address: 
+   { building: '658',
+     coord: [ -73.81363999999999, 40.82941100000001 ],
+     street: 'Clarence Ave',
+     zipcode: '10465' },
+  borough: 'Bronx',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-06-21T00:00:00.000Z, grade: 'A', score: 5 },
+     { date: 2012-07-11T00:00:00.000Z, grade: 'A', score: 10 } ],
+  name: 'Manhem Club',
+  restaurant_id: '40364363' }
+{ _id: ObjectId("6078771c17f84c1204c77259"),
+  address: 
+   { building: '1006',
+     coord: [ -73.84856870000002, 40.8903781 ],
+     street: 'East 233 Street',
+     zipcode: '10466' },
+  borough: 'Bronx',
+  cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+  grades: 
+   [ { date: 2014-04-24T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2013-09-05T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2013-02-21T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2012-07-03T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2011-07-11T00:00:00.000Z, grade: 'A', score: 5 } ],
+  name: 'Carvel Ice Cream',
+  restaurant_id: '40363093' }
+{ _id: ObjectId("6078771c17f84c1204c7735a"),
+  address: 
+   { building: '576581',
+     coord: [ -73.9030535, 40.8812538 ],
+     street: 'Broadway',
+     zipcode: '10463' },
+  borough: 'Bronx',
+  cuisine: 'Hamburgers',
+  grades: 
+   [ { date: 2014-04-16T00:00:00.000Z, grade: 'A', score: 7 },
+     { date: 2013-11-06T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2013-06-17T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2012-12-31T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2012-07-10T00:00:00.000Z, grade: 'A', score: 4 },
+     { date: 2012-02-07T00:00:00.000Z, grade: 'A', score: 5 } ],
+  name: 'Mcdonald\'S',
+  restaurant_id: '40369915' }
+{ _id: ObjectId("6078771c17f84c1204c773f3"),
+  address: 
+   { building: '749',
+     coord: [ -73.8657838, 40.8544744 ],
+     street: 'Lydig Avenue',
+     zipcode: '10462' },
+  borough: 'Bronx',
+  cuisine: 'Pizza/Italian',
+  grades: 
+   [ { date: 2015-01-09T00:00:00.000Z, grade: 'Z', score: 17 },
+     { date: 2014-06-25T00:00:00.000Z, grade: 'B', score: 20 },
+     { date: 2013-12-09T00:00:00.000Z, grade: 'B', score: 22 },
+     { date: 2013-06-15T00:00:00.000Z, grade: 'B', score: 24 },
+     { date: 2012-05-30T00:00:00.000Z, grade: 'A', score: 7 } ],
+  name: 'John & Joe Pizzeria & Restaurant',
+  restaurant_id: '40377243' }
+{ _id: ObjectId("6078771c17f84c1204c77315"),
+  address: 
+   { building: '2300',
+     coord: [ -73.8786113, 40.8502883 ],
+     street: 'Southern Boulevard',
+     zipcode: '10460' },
+  borough: 'Bronx',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-05-21T00:00:00.000Z, grade: 'A', score: 5 },
+     { date: 2013-05-28T00:00:00.000Z, grade: 'A', score: 3 },
+     { date: 2012-06-18T00:00:00.000Z, grade: 'A', score: 4 },
+     { date: 2011-06-07T00:00:00.000Z, grade: 'A', score: 9 } ],
+  name: 'African Market (Baboon Cafe)',
+  restaurant_id: '40368026' }
+{ _id: ObjectId("6078771c17f84c1204c7725d"),
+  address: 
+   { building: '1236',
+     coord: [ -73.8893654, 40.81376179999999 ],
+     street: '238 Spofford Ave',
+     zipcode: '10474' },
+  borough: 'Bronx',
+  cuisine: 'Chinese',
+  grades: 
+   [ { date: 2013-12-30T00:00:00.000Z, grade: 'A', score: 8 },
+     { date: 2013-01-08T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2012-06-12T00:00:00.000Z, grade: 'B', score: 15 } ],
+  name: 'Happy Garden',
+  restaurant_id: '40363289' }
+{ _id: ObjectId("6078771c17f84c1204c7726f"),
+  address: 
+   { building: '277',
+     coord: [ -73.8941893, 40.8634684 ],
+     street: 'East Kingsbridge Road',
+     zipcode: '10458' },
+  borough: 'Bronx',
+  cuisine: 'Chinese',
+  grades: 
+   [ { date: 2014-03-03T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2013-09-26T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2013-03-19T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2012-08-29T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2011-08-17T00:00:00.000Z, grade: 'A', score: 13 } ],
+  name: 'Happy Garden',
+  restaurant_id: '40364296' }
+{ _id: ObjectId("6078771c17f84c1204c77359"),
+  address: 
+   { building: '170',
+     coord: [ -73.9035553, 40.878342 ],
+     street: 'West  231 Street',
+     zipcode: '10463' },
+  borough: 'Bronx',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-10-01T00:00:00.000Z, grade: 'B', score: 18 },
+     { date: 2014-04-23T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-10-23T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2013-05-21T00:00:00.000Z, grade: 'B', score: 19 },
+     { date: 2013-05-02T00:00:00.000Z, grade: 'P', score: 3 },
+     { date: 2012-11-20T00:00:00.000Z, grade: 'B', score: 24 } ],
+  name: 'P & K\'S Grill',
+  restaurant_id: '40369895' }
+{ _id: ObjectId("6078771c17f84c1204c7734c"),
+  address: 
+   { building: '2701',
+     coord: [ -72.7329266, 41.3099228 ],
+     street: 'Boston Post Road',
+     zipcode: '10467' },
+  borough: 'Bronx',
+  cuisine: 'Hamburgers',
+  grades: 
+   [ { date: 2014-05-28T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2014-01-16T00:00:00.000Z, grade: 'A', score: 5 },
+     { date: 2013-01-02T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2011-12-27T00:00:00.000Z, grade: 'A', score: 2 } ],
+  name: 'White Castle',
+  restaurant_id: '40369669' }
+{ _id: ObjectId("6078771c17f84c1204c77310"),
+  address: 
+   { building: '4280',
+     coord: [ -73.86697, 40.89794699999999 ],
+     street: 'Katonah Ave',
+     zipcode: '10470' },
+  borough: 'Bronx',
+  cuisine: 'Not Listed/Not Applicable',
+  grades: 
+   [ { date: 2014-06-04T00:00:00.000Z, grade: 'A', score: 5 },
+     { date: 2013-06-07T00:00:00.000Z, grade: 'A', score: 2 },
+     { date: 2012-06-27T00:00:00.000Z, grade: 'A', score: 2 },
+     { date: 2011-07-13T00:00:00.000Z, grade: 'A', score: 10 } ],
+  name: 'The Lark\'S Nest',
+  restaurant_id: '40367946' }
+{ _id: ObjectId("6078771c17f84c1204c77314"),
+  address: 
+   { building: '2300',
+     coord: [ -73.8786113, 40.8502883 ],
+     street: 'Southern Boulevard',
+     zipcode: '10460' },
+  borough: 'Bronx',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-05-21T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2013-05-29T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2012-06-15T00:00:00.000Z, grade: 'A', score: 2 },
+     { date: 2011-06-08T00:00:00.000Z, grade: 'A', score: 0 } ],
+  name: 'Beaver Pond',
+  restaurant_id: '40368025' }
+{ _id: ObjectId("6078771c17f84c1204c77347"),
+  address: 
+   { building: '2375',
+     coord: [ -73.85534559999999, 40.8426433 ],
+     street: 'East Tremont Avenue',
+     zipcode: '10462' },
+  borough: 'Bronx',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-10-14T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2014-04-08T00:00:00.000Z, grade: 'A', score: 8 },
+     { date: 2013-11-04T00:00:00.000Z, grade: 'C', score: 45 },
+     { date: 2013-05-23T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2012-10-18T00:00:00.000Z, grade: 'B', score: 15 },
+     { date: 2012-10-05T00:00:00.000Z, grade: 'P', score: 12 },
+     { date: 2012-05-14T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2011-12-21T00:00:00.000Z, grade: 'A', score: 11 } ],
+  name: 'Bronx Grill',
+  restaurant_id: '40369601' }
+{ _id: ObjectId("6078771c17f84c1204c77427"),
+  address: 
+   { building: '3657',
+     coord: [ -73.901496, 40.885102 ],
+     street: 'Kingsbridge Avenue',
+     zipcode: '10463' },
+  borough: 'Bronx',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-09-25T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2014-04-30T00:00:00.000Z, grade: 'B', score: 20 },
+     { date: 2013-08-19T00:00:00.000Z, grade: 'A', score: 2 },
+     { date: 2013-03-06T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-01-26T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2011-10-19T00:00:00.000Z, grade: 'B', score: 18 } ],
+  name: 'Riverdale Diner',
+  restaurant_id: '40380253' }
+{ _id: ObjectId("6078771c17f84c1204c772e5"),
+  address: 
+   { building: '1191',
+     coord: [ -73.8513114, 40.8316981 ],
+     street: 'Castle Hill Avenue',
+     zipcode: '10462' },
+  borough: 'Bronx',
+  cuisine: 'Café/Coffee/Tea',
+  grades: 
+   [ { date: 2014-07-03T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-07-08T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2013-02-11T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2012-08-14T00:00:00.000Z, grade: 'B', score: 14 },
+     { date: 2011-08-23T00:00:00.000Z, grade: 'A', score: 12 } ],
+  name: 'Lulu\'S Coffee Shop',
+  restaurant_id: '40366938' }
+Type "it" for more
+db.addresses.find({"borough" : "Bronx"}).limit(5)
+{ _id: ObjectId("6078771c17f84c1204c772a7"),
+  address: 
+   { building: '72',
+     coord: [ -73.92506, 40.8275556 ],
+     street: 'East  161 Street',
+     zipcode: '10451' },
+  borough: 'Bronx',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-04-15T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2013-11-14T00:00:00.000Z, grade: 'A', score: 4 },
+     { date: 2013-07-29T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2012-12-31T00:00:00.000Z, grade: 'B', score: 15 },
+     { date: 2012-05-30T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-01-09T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2011-08-15T00:00:00.000Z, grade: 'C', score: 37 } ],
+  name: 'Yankee Tavern',
+  restaurant_id: '40365499' }
+{ _id: ObjectId("6078771c17f84c1204c772ba"),
+  address: 
+   { building: '331',
+     coord: [ -73.87786539999999, 40.8724377 ],
+     street: 'East  204 Street',
+     zipcode: '10467' },
+  borough: 'Bronx',
+  cuisine: 'Irish',
+  grades: 
+   [ { date: 2014-08-26T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2014-03-26T00:00:00.000Z, grade: 'B', score: 23 },
+     { date: 2013-09-11T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-12-18T00:00:00.000Z, grade: 'B', score: 27 },
+     { date: 2011-10-20T00:00:00.000Z, grade: 'A', score: 13 } ],
+  name: 'Mcdwyers Pub',
+  restaurant_id: '40365893' }
+{ _id: ObjectId("6078771c17f84c1204c77313"),
+  address: 
+   { building: '2300',
+     coord: [ -73.8786113, 40.8502883 ],
+     street: 'Southern Boulevard',
+     zipcode: '10460' },
+  borough: 'Bronx',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-05-21T00:00:00.000Z, grade: 'A', score: 2 },
+     { date: 2013-05-22T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2012-05-17T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2011-06-08T00:00:00.000Z, grade: 'A', score: 5 } ],
+  name: 'Cool Zone',
+  restaurant_id: '40368022' }
+{ _id: ObjectId("6078771c17f84c1204c7733d"),
+  address: 
+   { building: '591',
+     coord: [ -73.790804, 40.8541848 ],
+     street: 'City Island Ave',
+     zipcode: '10464' },
+  borough: 'Bronx',
+  cuisine: 'Seafood',
+  grades: 
+   [ { date: 2014-12-11T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2014-06-07T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-11-09T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-04-16T00:00:00.000Z, grade: 'B', score: 22 },
+     { date: 2012-02-29T00:00:00.000Z, grade: 'A', score: 9 } ],
+  name: 'Seashore Restaurant',
+  restaurant_id: '40369299' }
+{ _id: ObjectId("6078771c17f84c1204c7734a"),
+  address: 
+   { building: '2',
+     coord: [ -73.7826735, 40.8377713 ],
+     street: 'City Island Ave',
+     zipcode: '10464' },
+  borough: 'Bronx',
+  cuisine: 'Seafood',
+  grades: 
+   [ { date: 2014-05-17T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2013-06-24T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2012-05-10T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2011-05-23T00:00:00.000Z, grade: 'A', score: 12 } ],
+  name: 'Johnny\'S Reef Restaurant',
+  restaurant_id: '40369641' }
+db.rest.find({"borough" : "Bronx"}).skip(5).limit(5)
+db.addresses.find({"borough" : "Bronx"}).skip(5).limit(5)
+{ _id: ObjectId("6078771c17f84c1204c773b5"),
+  address: 
+   { building: '5655',
+     coord: [ -73.90401159999999, 40.8803571 ],
+     street: 'Broadway',
+     zipcode: '10463' },
+  borough: 'Bronx',
+  cuisine: 'Pancakes/Waffles',
+  grades: 
+   [ { date: 2014-08-08T00:00:00.000Z, grade: 'A', score: 3 },
+     { date: 2014-03-11T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-09-04T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2013-01-28T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2012-07-31T00:00:00.000Z, grade: 'A', score: 8 },
+     { date: 2012-03-13T00:00:00.000Z, grade: 'B', score: 21 } ],
+  name: 'Ihop',
+  restaurant_id: '40373938' }
+{ _id: ObjectId("6078771c17f84c1204c77277"),
+  address: 
+   { building: '658',
+     coord: [ -73.81363999999999, 40.82941100000001 ],
+     street: 'Clarence Ave',
+     zipcode: '10465' },
+  borough: 'Bronx',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-06-21T00:00:00.000Z, grade: 'A', score: 5 },
+     { date: 2012-07-11T00:00:00.000Z, grade: 'A', score: 10 } ],
+  name: 'Manhem Club',
+  restaurant_id: '40364363' }
+{ _id: ObjectId("6078771c17f84c1204c77259"),
+  address: 
+   { building: '1006',
+     coord: [ -73.84856870000002, 40.8903781 ],
+     street: 'East 233 Street',
+     zipcode: '10466' },
+  borough: 'Bronx',
+  cuisine: 'Ice Cream, Gelato, Yogurt, Ices',
+  grades: 
+   [ { date: 2014-04-24T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2013-09-05T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2013-02-21T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2012-07-03T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2011-07-11T00:00:00.000Z, grade: 'A', score: 5 } ],
+  name: 'Carvel Ice Cream',
+  restaurant_id: '40363093' }
+{ _id: ObjectId("6078771c17f84c1204c7735a"),
+  address: 
+   { building: '576581',
+     coord: [ -73.9030535, 40.8812538 ],
+     street: 'Broadway',
+     zipcode: '10463' },
+  borough: 'Bronx',
+  cuisine: 'Hamburgers',
+  grades: 
+   [ { date: 2014-04-16T00:00:00.000Z, grade: 'A', score: 7 },
+     { date: 2013-11-06T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2013-06-17T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2012-12-31T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2012-07-10T00:00:00.000Z, grade: 'A', score: 4 },
+     { date: 2012-02-07T00:00:00.000Z, grade: 'A', score: 5 } ],
+  name: 'Mcdonald\'S',
+  restaurant_id: '40369915' }
+{ _id: ObjectId("6078771c17f84c1204c773f3"),
+  address: 
+   { building: '749',
+     coord: [ -73.8657838, 40.8544744 ],
+     street: 'Lydig Avenue',
+     zipcode: '10462' },
+  borough: 'Bronx',
+  cuisine: 'Pizza/Italian',
+  grades: 
+   [ { date: 2015-01-09T00:00:00.000Z, grade: 'Z', score: 17 },
+     { date: 2014-06-25T00:00:00.000Z, grade: 'B', score: 20 },
+     { date: 2013-12-09T00:00:00.000Z, grade: 'B', score: 22 },
+     { date: 2013-06-15T00:00:00.000Z, grade: 'B', score: 24 },
+     { date: 2012-05-30T00:00:00.000Z, grade: 'A', score: 7 } ],
+  name: 'John & Joe Pizzeria & Restaurant',
+  restaurant_id: '40377243' }
+db.addresses.find({"grades.score" : {"$gt" : 90}})
+{ _id: ObjectId("6078771c17f84c1204c77398"),
+  address: 
+   { building: '65',
+     coord: [ -73.9782725, 40.7624022 ],
+     street: 'West   54 Street',
+     zipcode: '10019' },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-08-22T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2014-03-28T00:00:00.000Z, grade: 'C', score: 131 },
+     { date: 2013-09-25T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2013-04-08T00:00:00.000Z, grade: 'B', score: 25 },
+     { date: 2012-10-15T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2011-10-19T00:00:00.000Z, grade: 'A', score: 13 } ],
+  name: 'Murals On 54/Randolphs\'S',
+  restaurant_id: '40372466' }
+{ _id: ObjectId("6078771c17f84c1204c7759c"),
+  address: 
+   { building: '130',
+     coord: [ -73.984758, 40.7457939 ],
+     street: 'Madison Avenue',
+     zipcode: '10016' },
+  borough: 'Manhattan',
+  cuisine: 'Pizza/Italian',
+  grades: 
+   [ { date: 2014-12-24T00:00:00.000Z, grade: 'Z', score: 31 },
+     { date: 2014-06-17T00:00:00.000Z, grade: 'C', score: 98 },
+     { date: 2013-12-12T00:00:00.000Z, grade: 'C', score: 32 },
+     { date: 2013-05-22T00:00:00.000Z, grade: 'B', score: 21 },
+     { date: 2012-05-02T00:00:00.000Z, grade: 'A', score: 11 } ],
+  name: 'Bella Napoli',
+  restaurant_id: '40393488' }
+{ _id: ObjectId("6078771c17f84c1204c77439"),
+  address: 
+   { building: '345',
+     coord: [ -73.9864626, 40.7266739 ],
+     street: 'East 6 Street',
+     zipcode: '10003' },
+  borough: 'Manhattan',
+  cuisine: 'Indian',
+  grades: 
+   [ { date: 2014-09-15T00:00:00.000Z, grade: 'A', score: 5 },
+     { date: 2014-01-14T00:00:00.000Z, grade: 'A', score: 8 },
+     { date: 2013-05-30T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-04-24T00:00:00.000Z, grade: 'P', score: 2 },
+     { date: 2012-10-01T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2012-04-06T00:00:00.000Z, grade: 'C', score: 92 },
+     { date: 2011-11-03T00:00:00.000Z, grade: 'C', score: 41 } ],
+  name: 'Gandhi',
+  restaurant_id: '40381295' }
+db.addresses.find({$and : [{"grades.score" : {"$gt" : 90}},{"grades.score" : {"$lt" : 100}}]})
+{ _id: ObjectId("6078771c17f84c1204c77398"),
+  address: 
+   { building: '65',
+     coord: [ -73.9782725, 40.7624022 ],
+     street: 'West   54 Street',
+     zipcode: '10019' },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-08-22T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2014-03-28T00:00:00.000Z, grade: 'C', score: 131 },
+     { date: 2013-09-25T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2013-04-08T00:00:00.000Z, grade: 'B', score: 25 },
+     { date: 2012-10-15T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2011-10-19T00:00:00.000Z, grade: 'A', score: 13 } ],
+  name: 'Murals On 54/Randolphs\'S',
+  restaurant_id: '40372466' }
+{ _id: ObjectId("6078771c17f84c1204c7759c"),
+  address: 
+   { building: '130',
+     coord: [ -73.984758, 40.7457939 ],
+     street: 'Madison Avenue',
+     zipcode: '10016' },
+  borough: 'Manhattan',
+  cuisine: 'Pizza/Italian',
+  grades: 
+   [ { date: 2014-12-24T00:00:00.000Z, grade: 'Z', score: 31 },
+     { date: 2014-06-17T00:00:00.000Z, grade: 'C', score: 98 },
+     { date: 2013-12-12T00:00:00.000Z, grade: 'C', score: 32 },
+     { date: 2013-05-22T00:00:00.000Z, grade: 'B', score: 21 },
+     { date: 2012-05-02T00:00:00.000Z, grade: 'A', score: 11 } ],
+  name: 'Bella Napoli',
+  restaurant_id: '40393488' }
+{ _id: ObjectId("6078771c17f84c1204c77439"),
+  address: 
+   { building: '345',
+     coord: [ -73.9864626, 40.7266739 ],
+     street: 'East 6 Street',
+     zipcode: '10003' },
+  borough: 'Manhattan',
+  cuisine: 'Indian',
+  grades: 
+   [ { date: 2014-09-15T00:00:00.000Z, grade: 'A', score: 5 },
+     { date: 2014-01-14T00:00:00.000Z, grade: 'A', score: 8 },
+     { date: 2013-05-30T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-04-24T00:00:00.000Z, grade: 'P', score: 2 },
+     { date: 2012-10-01T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2012-04-06T00:00:00.000Z, grade: 'C', score: 92 },
+     { date: 2011-11-03T00:00:00.000Z, grade: 'C', score: 41 } ],
+  name: 'Gandhi',
+  restaurant_id: '40381295' }
+db.rest.find({"address.coord.0" : {$lt : -95.754168}}) 11. find the restaurants that do not prepare any cuisine of 'American' and their grade score more than 70 and latitude less than -65.754168.
+SyntaxError: Unexpected token, expected ";" (1:55)
+
+> 1 | db.rest.find({"address.coord.0" : {$lt : -95.754168}}) 11. find the restaurants that do not prepare any cuisine of 'American' and their grade score more than 70 and latitude less than -65.754168.
+    |                                                        ^
+  2 | 
+db.addresses.find({"address.coord.0" : {$lt : -95.754168}}) 
+{ _id: ObjectId("6078771f17f84c1204c77882"),
+  address: 
+   { building: '3707',
+     coord: [ -101.8945214, 33.5197474 ],
+     street: '82 Street',
+     zipcode: '11372' },
+  borough: 'Queens',
+  cuisine: 'American ',
+  grades: 
+   [ { date: 2014-06-04T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-11-07T00:00:00.000Z, grade: 'B', score: 19 },
+     { date: 2013-05-17T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2012-08-29T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2012-04-03T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2011-11-16T00:00:00.000Z, grade: 'A', score: 7 } ],
+  name: 'Burger King',
+  restaurant_id: '40534067' }
+{ _id: ObjectId("6078772117f84c1204c77bed"),
+  address: 
+   { building: '15259',
+     coord: [ -119.6368672, 36.2504996 ],
+     street: '10 Avenue',
+     zipcode: '11357' },
+  borough: 'Queens',
+  cuisine: 'Italian',
+  grades: 
+   [ { date: 2014-09-04T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2014-03-26T00:00:00.000Z, grade: 'A', score: 8 },
+     { date: 2013-03-04T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2012-09-27T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2012-04-20T00:00:00.000Z, grade: 'A', score: 7 },
+     { date: 2011-11-23T00:00:00.000Z, grade: 'C', score: 34 } ],
+  name: 'Cascarino\'S',
+  restaurant_id: '40668681' }
+{ _id: ObjectId("6078772317f84c1204c78093"),
+  address: 
+   { building: '60',
+     coord: [ -111.9975205, 42.0970258 ],
+     street: 'West Side Highway',
+     zipcode: '10006' },
+  borough: 'Manhattan',
+  cuisine: 'Japanese',
+  grades: 
+   [ { date: 2014-03-20T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2013-06-28T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2012-07-05T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2011-07-27T00:00:00.000Z, grade: 'A', score: 2 } ],
+  name: 'Sports Center At Chelsea Piers (Sushi Bar)',
+  restaurant_id: '40882356' }
+db.addresses.find({$and : [{"cuisine" : {$ne : "American "}}, {"address.coord.0" : {$lt : -65.754168}}, {"grades.score" : {$gt : 70}}]})
+{ _id: ObjectId("6078771c17f84c1204c775a7"),
+  address: 
+   { building: '101',
+     coord: [ -73.9243061, 40.8276297 ],
+     street: 'East 161 Street',
+     zipcode: '10451' },
+  borough: 'Bronx',
+  cuisine: 'Latin (Cuban, Dominican, Puerto Rican, South & Central American)',
+  grades: 
+   [ { date: 2014-04-10T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2013-10-01T00:00:00.000Z, grade: 'A', score: 6 },
+     { date: 2013-04-11T00:00:00.000Z, grade: 'B', score: 25 },
+     { date: 2012-10-25T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2012-10-10T00:00:00.000Z, grade: 'P', score: 12 },
+     { date: 2012-05-25T00:00:00.000Z, grade: 'B', score: 14 },
+     { date: 2011-09-14T00:00:00.000Z, grade: 'B', score: 26 },
+     { date: 2011-04-25T00:00:00.000Z, grade: 'C', score: 76 } ],
+  name: 'El Molino Rojo Restaurant',
+  restaurant_id: '40393688' }
+{ _id: ObjectId("6078771c17f84c1204c7759c"),
+  address: 
+   { building: '130',
+     coord: [ -73.984758, 40.7457939 ],
+     street: 'Madison Avenue',
+     zipcode: '10016' },
+  borough: 'Manhattan',
+  cuisine: 'Pizza/Italian',
+  grades: 
+   [ { date: 2014-12-24T00:00:00.000Z, grade: 'Z', score: 31 },
+     { date: 2014-06-17T00:00:00.000Z, grade: 'C', score: 98 },
+     { date: 2013-12-12T00:00:00.000Z, grade: 'C', score: 32 },
+     { date: 2013-05-22T00:00:00.000Z, grade: 'B', score: 21 },
+     { date: 2012-05-02T00:00:00.000Z, grade: 'A', score: 11 } ],
+  name: 'Bella Napoli',
+  restaurant_id: '40393488' }
+{ _id: ObjectId("6078771c17f84c1204c77439"),
+  address: 
+   { building: '345',
+     coord: [ -73.9864626, 40.7266739 ],
+     street: 'East 6 Street',
+     zipcode: '10003' },
+  borough: 'Manhattan',
+  cuisine: 'Indian',
+  grades: 
+   [ { date: 2014-09-15T00:00:00.000Z, grade: 'A', score: 5 },
+     { date: 2014-01-14T00:00:00.000Z, grade: 'A', score: 8 },
+     { date: 2013-05-30T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-04-24T00:00:00.000Z, grade: 'P', score: 2 },
+     { date: 2012-10-01T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2012-04-06T00:00:00.000Z, grade: 'C', score: 92 },
+     { date: 2011-11-03T00:00:00.000Z, grade: 'C', score: 41 } ],
+  name: 'Gandhi',
+  restaurant_id: '40381295' }
+{ _id: ObjectId("6078771f17f84c1204c776f7"),
+  address: 
+   { building: '289',
+     coord: [ -73.94610279999999, 40.7137587 ],
+     street: 'Manhattan Avenue',
+     zipcode: '11211' },
+  borough: 'Brooklyn',
+  cuisine: 'Bakery',
+  grades: 
+   [ { date: 2014-03-19T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2013-10-10T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2013-05-07T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-09-11T00:00:00.000Z, grade: 'B', score: 18 },
+     { date: 2012-04-18T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2011-09-27T00:00:00.000Z, grade: 'A', score: 8 },
+     { date: 2011-05-03T00:00:00.000Z, grade: 'C', score: 77 } ],
+  name: 'Fortunato Bros Cafe & Bakery',
+  restaurant_id: '40400561' }
+{ _id: ObjectId("6078772117f84c1204c77d21"),
+  address: 
+   { building: '231',
+     coord: [ -73.9772294, 40.7527262 ],
+     street: 'Grand Central Station',
+     zipcode: '10017' },
+  borough: 'Manhattan',
+  cuisine: 'Italian',
+  grades: 
+   [ { date: 2015-01-07T00:00:00.000Z, grade: 'Z', score: 20 },
+     { date: 2014-07-03T00:00:00.000Z, grade: 'B', score: 14 },
+     { date: 2013-12-21T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2013-05-17T00:00:00.000Z, grade: 'C', score: 76 },
+     { date: 2012-04-20T00:00:00.000Z, grade: 'A', score: 12 } ],
+  name: 'Two Boots Grand Central',
+  restaurant_id: '40725591' }
+db.addresses.find({$and : [{"cuisine" : {$ne : "American "}}, {"address.coord.1" : {$lt : -65.754168}}, {"grades.score" : {$gt : 70}}]})
+db.addresses.find({$and : [{"cuisine" : {$ne : "American "}}, {"grades.grade" : "A"}, {"borough" : {$ne : "Brooklyn "}}]}).sort({cuisine : -1})
+{ _id: ObjectId("6078771f17f84c1204c77946"),
+  address: 
+   { building: '89',
+     coord: [ -73.9995899, 40.7168015 ],
+     street: 'Baxter Street',
+     zipcode: '10013' },
+  borough: 'Manhattan',
+  cuisine: 'Vietnamese/Cambodian/Malaysia',
+  grades: 
+   [ { date: 2014-08-21T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2013-08-31T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2013-04-11T00:00:00.000Z, grade: 'C', score: 3 },
+     { date: 2012-10-17T00:00:00.000Z, grade: 'A', score: 4 },
+     { date: 2012-05-15T00:00:00.000Z, grade: 'A', score: 10 } ],
+  name: 'Thai Son',
+  restaurant_id: '40559606' }
+{ _id: ObjectId("6078771f17f84c1204c779ff"),
+  address: 
+   { building: '8278',
+     coord: [ -73.88143509999999, 40.7412552 ],
+     street: 'Broadway',
+     zipcode: '11373' },
+  borough: 'Queens',
+  cuisine: 'Vietnamese/Cambodian/Malaysia',
+  grades: 
+   [ { date: 2014-06-12T00:00:00.000Z, grade: 'B', score: 21 },
+     { date: 2013-05-20T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-12-26T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2012-12-03T00:00:00.000Z, grade: 'P', score: 5 },
+     { date: 2012-05-04T00:00:00.000Z, grade: 'B', score: 27 } ],
+  name: 'Pho Bac Vietnamese Seafood Cuisine',
+  restaurant_id: '40578058' }
+{ _id: ObjectId("6078772117f84c1204c77de8"),
+  address: 
+   { building: '148',
+     coord: [ -74.000254, 40.7172727 ],
+     street: 'Centre Street',
+     zipcode: '10013' },
+  borough: 'Manhattan',
+  cuisine: 'Vietnamese/Cambodian/Malaysia',
+  grades: 
+   [ { date: 2014-10-01T00:00:00.000Z, grade: 'A', score: 7 },
+     { date: 2014-05-19T00:00:00.000Z, grade: 'C', score: 5 },
+     { date: 2013-11-15T00:00:00.000Z, grade: 'B', score: 14 },
+     { date: 2013-03-08T00:00:00.000Z, grade: 'B', score: 25 },
+     { date: 2012-05-22T00:00:00.000Z, grade: 'B', score: 23 },
+     { date: 2011-10-27T00:00:00.000Z, grade: 'A', score: 9 } ],
+  name: 'Nha-Trang Centre Vietnam Restaurant',
+  restaurant_id: '40751226' }
+{ _id: ObjectId("6078771c17f84c1204c774ea"),
+  address: 
+   { building: '300',
+     coord: [ -73.985568, 40.7307496 ],
+     street: 'East 12 Street',
+     zipcode: '10003' },
+  borough: 'Manhattan',
+  cuisine: 'Vegetarian',
+  grades: 
+   [ { date: 2014-02-05T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2013-04-24T00:00:00.000Z, grade: 'B', score: 19 },
+     { date: 2012-01-17T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2011-07-25T00:00:00.000Z, grade: 'A', score: 10 } ],
+  name: 'Angelica Kitchen',
+  restaurant_id: '40388281' }
+{ _id: ObjectId("6078771f17f84c1204c7769f"),
+  address: 
+   { building: '1307',
+     coord: [ -73.9589834, 40.77141839999999 ],
+     street: '3 Avenue',
+     zipcode: '10021' },
+  borough: 'Manhattan',
+  cuisine: 'Vegetarian',
+  grades: 
+   [ { date: 2014-12-03T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2014-02-18T00:00:00.000Z, grade: 'B', score: 22 },
+     { date: 2013-06-25T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2012-06-28T00:00:00.000Z, grade: 'A', score: 12 } ],
+  name: 'Candle Cafe',
+  restaurant_id: '40399007' }
+{ _id: ObjectId("6078771f17f84c1204c77807"),
+  address: 
+   { building: '547',
+     coord: [ -92.7292446, 41.7461746 ],
+     street: '6 Avenue',
+     zipcode: '10011' },
+  borough: 'Manhattan',
+  cuisine: 'Vegetarian',
+  grades: 
+   [ { date: 2014-09-26T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2014-04-07T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-10-03T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-09-10T00:00:00.000Z, grade: 'A', score: 7 },
+     { date: 2012-04-30T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2011-11-30T00:00:00.000Z, grade: 'A', score: 11 } ],
+  name: 'Village Yogurt',
+  restaurant_id: '40512123' }
+{ _id: ObjectId("6078771f17f84c1204c778a7"),
+  address: 
+   { building: '46',
+     coord: [ -74.000252, 40.7356228 ],
+     street: 'Greenwich Avenue',
+     zipcode: '10011' },
+  borough: 'Manhattan',
+  cuisine: 'Vegetarian',
+  grades: 
+   [ { date: 2014-07-01T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2013-12-31T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2013-05-24T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2012-10-11T00:00:00.000Z, grade: 'A', score: 6 } ],
+  name: 'Village Natural',
+  restaurant_id: '40536786' }
+{ _id: ObjectId("6078772117f84c1204c77b6e"),
+  address: 
+   { building: '646',
+     coord: [ -73.97279, 40.791289 ],
+     street: 'Amsterdam Avenue',
+     zipcode: '10025' },
+  borough: 'Manhattan',
+  cuisine: 'Vegetarian',
+  grades: 
+   [ { date: 2014-02-19T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-11-29T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2011-10-03T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2011-04-11T00:00:00.000Z, grade: 'A', score: 7 } ],
+  name: 'Mana',
+  restaurant_id: '40644922' }
+{ _id: ObjectId("6078772117f84c1204c77b48"),
+  address: 
+   { building: '405',
+     coord: [ -73.98565239999999, 40.7263767 ],
+     street: 'East    6 Street',
+     zipcode: '10009' },
+  borough: 'Manhattan',
+  cuisine: 'Vegetarian',
+  grades: 
+   [ { date: 2014-09-29T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2014-01-27T00:00:00.000Z, grade: 'B', score: 18 },
+     { date: 2013-07-31T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2013-02-26T00:00:00.000Z, grade: 'B', score: 18 },
+     { date: 2012-08-06T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-01-19T00:00:00.000Z, grade: 'B', score: 22 } ],
+  name: 'Caravan Of Dreams',
+  restaurant_id: '40635781' }
+{ _id: ObjectId("6078772117f84c1204c77a42"),
+  address: 
+   { building: '2268',
+     coord: [ -73.9564939, 40.650368 ],
+     street: 'Church Avenue',
+     zipcode: '11226' },
+  borough: 'Brooklyn',
+  cuisine: 'Vegetarian',
+  grades: 
+   [ { date: 2014-07-28T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2014-02-25T00:00:00.000Z, grade: 'A', score: 5 },
+     { date: 2013-06-01T00:00:00.000Z, grade: 'A', score: 7 },
+     { date: 2012-10-16T00:00:00.000Z, grade: 'C', score: 28 },
+     { date: 2011-10-06T00:00:00.000Z, grade: 'A', score: 10 } ],
+  name: 'Strictly Vegetarian',
+  restaurant_id: '40587626' }
+{ _id: ObjectId("6078772117f84c1204c77dc1"),
+  address: 
+   { building: '752',
+     coord: [ -73.950456, 40.672989 ],
+     street: 'Nostrand Avenue',
+     zipcode: '11216' },
+  borough: 'Brooklyn',
+  cuisine: 'Vegetarian',
+  grades: 
+   [ { date: 2014-12-03T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2014-06-04T00:00:00.000Z, grade: 'A', score: 8 },
+     { date: 2013-12-03T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2013-05-31T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2012-10-15T00:00:00.000Z, grade: 'A', score: 7 },
+     { date: 2012-05-09T00:00:00.000Z, grade: 'C', score: 33 } ],
+  name: 'Original Vegetarian Restaurant',
+  restaurant_id: '40746628' }
+{ _id: ObjectId("6078772317f84c1204c77e34"),
+  address: 
+   { building: '191',
+     coord: [ -73.95785099999999, 40.7174769 ],
+     street: 'Bedford Avenue',
+     zipcode: '11211' },
+  borough: 'Brooklyn',
+  cuisine: 'Vegetarian',
+  grades: 
+   [ { date: 2014-02-05T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2013-02-01T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-02-01T00:00:00.000Z, grade: 'A', score: 5 } ],
+  name: 'Bliss Bakery & Cafe',
+  restaurant_id: '40763388' }
+{ _id: ObjectId("6078772317f84c1204c77ff6"),
+  address: 
+   { building: '140',
+     coord: [ -74.0004534, 40.7311503 ],
+     street: 'West    4 Street',
+     zipcode: '10012' },
+  borough: 'Manhattan',
+  cuisine: 'Vegetarian',
+  grades: 
+   [ { date: 2014-06-30T00:00:00.000Z, grade: 'A', score: 8 },
+     { date: 2013-06-13T00:00:00.000Z, grade: 'A', score: 7 },
+     { date: 2013-01-28T00:00:00.000Z, grade: 'C', score: 54 },
+     { date: 2012-06-21T00:00:00.000Z, grade: 'A', score: 6 },
+     { date: 2012-01-25T00:00:00.000Z, grade: 'A', score: 9 } ],
+  name: 'Red Bamboo',
+  restaurant_id: '40861201' }
+{ _id: ObjectId("6078771c17f84c1204c77256"),
+  address: 
+   { building: '60',
+     coord: [ -74.0085357, 40.70620539999999 ],
+     street: 'Wall Street',
+     zipcode: '10005' },
+  borough: 'Manhattan',
+  cuisine: 'Turkish',
+  grades: 
+   [ { date: 2014-09-26T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2013-09-18T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-09-21T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2012-05-09T00:00:00.000Z, grade: 'A', score: 11 } ],
+  name: 'The Country Cafe',
+  restaurant_id: '40362715' }
+{ _id: ObjectId("6078771f17f84c1204c776b1"),
+  address: 
+   { building: '386',
+     coord: [ -73.981366, 40.741888 ],
+     street: '3 Avenue',
+     zipcode: '10016' },
+  borough: 'Manhattan',
+  cuisine: 'Turkish',
+  grades: 
+   [ { date: 2014-09-23T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2013-10-01T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2012-09-10T00:00:00.000Z, grade: 'A', score: 5 } ],
+  name: 'Turkish Kitchen',
+  restaurant_id: '40399372' }
+{ _id: ObjectId("6078771f17f84c1204c77945"),
+  address: 
+   { building: '64',
+     coord: [ -73.9788293, 40.7765158 ],
+     street: 'West   71 Street',
+     zipcode: '10023' },
+  borough: 'Manhattan',
+  cuisine: 'Turkish',
+  grades: 
+   [ { date: 2014-09-04T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2014-02-07T00:00:00.000Z, grade: 'A', score: 10 },
+     { date: 2013-04-18T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-07-25T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2012-02-01T00:00:00.000Z, grade: 'A', score: 7 } ],
+  name: 'Pasha Turkish Restaurant',
+  restaurant_id: '40559546' }
+{ _id: ObjectId("6078771f17f84c1204c77941"),
+  address: 
+   { building: '1405',
+     coord: [ -73.95796530000001, 40.7697258 ],
+     street: 'Second Avenue',
+     zipcode: '10021' },
+  borough: 'Manhattan',
+  cuisine: 'Turkish',
+  grades: 
+   [ { date: 2014-10-23T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2014-03-20T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2013-08-28T00:00:00.000Z, grade: 'B', score: 21 },
+     { date: 2012-12-05T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2011-10-27T00:00:00.000Z, grade: 'A', score: 7 } ],
+  name: 'Uskudar Restaurant',
+  restaurant_id: '40559172' }
+{ _id: ObjectId("6078771f17f84c1204c77975"),
+  address: 
+   { building: '2337',
+     coord: [ -73.9610505, 40.5999343 ],
+     street: 'Coney Island Avenue',
+     zipcode: '11223' },
+  borough: 'Brooklyn',
+  cuisine: 'Turkish',
+  grades: 
+   [ { date: 2014-07-16T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2014-02-10T00:00:00.000Z, grade: 'B', score: 24 },
+     { date: 2013-08-08T00:00:00.000Z, grade: 'A', score: 5 },
+     { date: 2013-01-23T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2012-07-13T00:00:00.000Z, grade: 'C', score: 2 },
+     { date: 2012-01-19T00:00:00.000Z, grade: 'A', score: 5 },
+     { date: 2011-09-22T00:00:00.000Z, grade: 'A', score: 13 } ],
+  name: 'Sahara Restaurant',
+  restaurant_id: '40563596' }
+{ _id: ObjectId("6078772117f84c1204c77bea"),
+  address: 
+   { building: '631',
+     coord: [ -73.991755, 40.760138 ],
+     street: '9 Avenue',
+     zipcode: '10036' },
+  borough: 'Manhattan',
+  cuisine: 'Turkish',
+  grades: 
+   [ { date: 2014-06-10T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-12-30T00:00:00.000Z, grade: 'A', score: 12 },
+     { date: 2013-04-24T00:00:00.000Z, grade: 'A', score: 11 },
+     { date: 2012-09-18T00:00:00.000Z, grade: 'A', score: 13 },
+     { date: 2012-02-22T00:00:00.000Z, grade: 'B', score: 20 } ],
+  name: 'Turkish Cuisine',
+  restaurant_id: '40668464' }
+{ _id: ObjectId("6078772117f84c1204c77ada"),
+  address: 
+   { building: '25505',
+     coord: [ -73.734503, 40.772264 ],
+     street: 'Northern Boulevard',
+     zipcode: '11362' },
+  borough: 'Queens',
+  cuisine: 'Turkish',
+  grades: 
+   [ { date: 2014-12-29T00:00:00.000Z, grade: 'A', score: 9 },
+     { date: 2014-04-24T00:00:00.000Z, grade: 'A', score: 3 },
+     { date: 2013-09-25T00:00:00.000Z, grade: 'B', score: 17 },
+     { date: 2013-02-20T00:00:00.000Z, grade: 'A', score: 11 } ],
+  name: 'Kebab House',
+  restaurant_id: '40608102' }
+Type "it" for more
+db.addresses.find({"name" : { $regex: /Reg/}}, {_id:0, restaurant_id:1, name:1, borough:1, cuisine:1})
+{ borough: 'Manhattan',
+  cuisine: 'Café/Coffee/Tea',
+  name: 'Caffe Reggio',
+  restaurant_id: '40369418' }
+{ borough: 'Brooklyn',
+  cuisine: 'American ',
+  name: 'Regina Caterers',
+  restaurant_id: '40356649' }
+{ borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Regency Hotel',
+  restaurant_id: '40382679' }
+{ borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Regency Whist Club',
+  restaurant_id: '40402377' }
+{ borough: 'Queens',
+  cuisine: 'American ',
+  name: 'Rego Park Cafe',
+  restaurant_id: '40523342' }
+{ borough: 'Queens',
+  cuisine: 'Pizza',
+  name: 'Regina Pizza',
+  restaurant_id: '40801325' }
+{ borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Regal Entertainment Group',
+  restaurant_id: '40891782' }
+db.addresses.find({"grades.score": {$lte: 10}}, {_id:0, restaurant_id:1, name:1, borough:1, cuisine:1})
+{ borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Angelika Film Center',
+  restaurant_id: '40362274' }
+{ borough: 'Manhattan',
+  cuisine: 'American ',
+  name: '1 East 66Th Street Kitchen',
+  restaurant_id: '40359480' }
+{ borough: 'Brooklyn',
+  cuisine: 'Delicatessen',
+  name: 'Wilken\'S Fine Food',
+  restaurant_id: '40356483' }
+{ borough: 'Staten Island',
+  cuisine: 'Delicatessen',
+  name: 'B & M Hot Bagel & Grocery',
+  restaurant_id: '40364299' }
+{ borough: 'Queens',
+  cuisine: 'Pizza/Italian',
+  name: 'New Park Pizzeria & Restaurant',
+  restaurant_id: '40364744' }
+{ borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'The Princeton Club',
+  restaurant_id: '40365361' }
+{ borough: 'Bronx',
+  cuisine: 'American ',
+  name: 'Yankee Tavern',
+  restaurant_id: '40365499' }
+{ borough: 'Manhattan',
+  cuisine: 'Italian',
+  name: 'Barbetta Restaurant',
+  restaurant_id: '40365726' }
+{ borough: 'Bronx',
+  cuisine: 'Irish',
+  name: 'Mcdwyers Pub',
+  restaurant_id: '40365893' }
+{ borough: 'Queens',
+  cuisine: 'American ',
+  name: 'Healy\'S Pub',
+  restaurant_id: '40366054' }
+{ borough: 'Queens',
+  cuisine: 'Jewish/Kosher',
+  name: 'Naomi Kosher Pizza',
+  restaurant_id: '40366425' }
+{ borough: 'Brooklyn',
+  cuisine: 'American ',
+  name: 'Tamaqua',
+  restaurant_id: '40366742' }
+{ borough: 'Brooklyn',
+  cuisine: 'Soul Food',
+  name: 'Mitchell\'S Restaurant',
+  restaurant_id: '40366961' }
+{ borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Cocktail Room (Nyac)',
+  restaurant_id: '40367339' }
+{ borough: 'Manhattan',
+  cuisine: 'Italian',
+  name: 'Mimis Restaurant & Bar',
+  restaurant_id: '40367728' }
+{ borough: 'Bronx',
+  cuisine: 'American ',
+  name: 'Cool Zone',
+  restaurant_id: '40368022' }
+{ borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Benjamin',
+  restaurant_id: '40368370' }
+{ borough: 'Manhattan',
+  cuisine: 'French',
+  name: 'Raouls',
+  restaurant_id: '40368752' }
+{ borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'The Brook',
+  restaurant_id: '40368763' }
+{ borough: 'Bronx',
+  cuisine: 'Seafood',
+  name: 'Seashore Restaurant',
+  restaurant_id: '40369299' }
+Type "it" for more
+db.addresses.find({},{_id:0, name:1}).sort( {name: 1})
+{ name: '(Lewis Drug Store) Locanda Vini E Olii' }
+{ name: '1 East 66Th Street Kitchen' }
+{ name: '101 Deli' }
+{ name: '101 Restaurant And Bar' }
+{ name: '1020 Bar' }
+{ name: '104-01 Foster Avenue Coffee Shop(Ups)' }
+{ name: '10Th Avenue Pizza & Cafe' }
+{ name: '111 Restaurant' }
+{ name: '15 East Restaurant' }
+{ name: '200 Fifth Avenue Restaurant & Sports Bar' }
+{ name: '21 Club' }
+{ name: '2A' }
+{ name: '3 Deli & Grill' }
+{ name: '3 Guys' }
+{ name: '3 Guys Resturant' }
+{ name: '42Nd Street Pizza Diner' }
+{ name: '44 & X Hell\'S Kitchen' }
+{ name: '44 Sw Ristorante & Bar' }
+{ name: '5 Burro Cafe' }
+{ name: '525 Lex Restaurant & Bar' }
+Type "it" for more
+db.addresses.find({name: {$regex: /mon/}},{_id:0, name:1, borough:1, "address.coord":1, cuisine:1})
+{ address: { coord: [ -73.9901605, 40.7526176 ] },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Delmonico\'S Kitchen' }
+{ address: { coord: [ -73.98306099999999, 40.7441419 ] },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Desmond\'S Tavern' }
+{ address: { coord: [ -73.924072, 40.76108900000001 ] },
+  borough: 'Queens',
+  cuisine: 'Greek',
+  name: 'Omonia Cafe' }
+{ address: { coord: [ -73.951199, 40.7166026 ] },
+  borough: 'Brooklyn',
+  cuisine: 'Italian',
+  name: 'Bamonte\'S Restaurant' }
+{ address: { coord: [ -74.10465599999999, 40.58834 ] },
+  borough: 'Staten Island',
+  cuisine: 'American ',
+  name: 'Richmond County Country Club' }
+{ address: { coord: [ -73.9812843, 40.5947365 ] },
+  borough: 'Brooklyn',
+  cuisine: 'Pizza/Italian',
+  name: 'Lb Spumoni Gardens' }
+{ address: { coord: [ -73.8221418, 40.7272376 ] },
+  borough: 'Queens',
+  cuisine: 'Jewish/Kosher',
+  name: 'Shimons Kosher Pizza' }
+{ address: { coord: [ -73.9707505, 40.7635651 ] },
+  borough: 'Manhattan',
+  cuisine: 'Delicatessen',
+  name: 'Delmonico Gourmet' }
+{ address: { coord: [ -73.97198209999999, 40.764464 ] },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Harmonie Club' }
+{ address: { coord: [ -73.9760637, 40.7508686 ] },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Delmonico Gourmet' }
+{ address: { coord: [ -73.98463480000001, 40.7630755 ] },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Neil Simon Theatre' }
+{ address: { coord: [ -73.79571990000001, 40.7095637 ] },
+  borough: 'Queens',
+  cuisine: 'Bakery',
+  name: 'Ramona\'S Bakery' }
+{ address: { coord: [ -74.028486, 40.630438 ] },
+  borough: 'Brooklyn',
+  cuisine: 'Mediterranean',
+  name: 'Omonia Cafe' }
+{ address: { coord: [ -73.9849976, 40.7276766 ] },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Simone Bar Cafe' }
+{ address: { coord: [ -74.01032339999999, 40.7050156 ] },
+  borough: 'Manhattan',
+  cuisine: 'Italian',
+  name: 'Delmonicos' }
+{ address: { coord: [ -74.1110561, 40.5884772 ] },
+  borough: 'Staten Island',
+  cuisine: 'American ',
+  name: 'Richmond County Country Club(10Th Hole)' }
+{ address: { coord: [ -74.112758, 40.5833299 ] },
+  borough: 'Staten Island',
+  cuisine: 'American ',
+  name: 'Richmond County Country Club' }
+{ address: { coord: [ -73.8706606, 40.7342757 ] },
+  borough: 'Queens',
+  cuisine: 'American ',
+  name: 'Cinnabon World Famous Cinnamon Rolls' }
+{ address: { coord: [ -73.9640299, 40.807001 ] },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Ferris Booth Commons - Alfred Lerner Hall' }
+{ address: { coord: [ -74.10465599999999, 40.58834 ] },
+  borough: 'Staten Island',
+  cuisine: 'American ',
+  name: 'Richmond County Country Club - Pool Snack Bar' }
+Type "it" for more
+db.addresses.find({name: {$regex: /^Mad.*/}},{_id:0, name:1, borough:1, "address.coord":1, cuisine:1})
+{ address: { coord: [ -73.9860597, 40.7431194 ] },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Madison Square' }
+{ address: { coord: [ -73.98302199999999, 40.742313 ] },
+  borough: 'Manhattan',
+  cuisine: 'Indian',
+  name: 'Madras Mahal' }
+{ address: { coord: [ -74.000002, 40.72735 ] },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Madame X' }
+{ address: { coord: [ -73.98171959999999, 40.7499406 ] },
+  borough: 'Manhattan',
+  cuisine: 'French',
+  name: 'Madison Bistro' }
+{ address: { coord: [ -73.9717845, 40.6897199 ] },
+  borough: 'Brooklyn',
+  cuisine: 'African',
+  name: 'Madiba' }
+{ address: { coord: [ -73.9886598, 40.7565811 ] },
+  borough: 'Manhattan',
+  cuisine: 'Hotdogs',
+  name: 'Madame Tussaud\'S' }
+{ address: { coord: [ -73.9040753, 40.9069011 ] },
+  borough: 'Bronx',
+  cuisine: 'Italian',
+  name: 'Madison\'S' }
+{ address: { coord: [ -73.95623719999999, 40.7761697 ] },
+  borough: 'Manhattan',
+  cuisine: 'American ',
+  name: 'Mad River Bar & Grille' }
+Enterprise atlas-12w3ox-shard-0 [primary]

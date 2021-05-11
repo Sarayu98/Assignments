@@ -1,0 +1,111 @@
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~
+$ mkdir Assignments
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~
+$ cd Assignments
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments
+$ touch README.txt
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments
+$ git init
+Initialized empty Git repository in C:/Users/PRADEEPS/Assignments/.git/
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (master)
+$ git add .
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (master)
+$ git commit -m "added README.txt file"
+[master (root-commit) fac2d18] added README.txt file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.txt
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (master)
+$ git branch html-assignments
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (master)
+$ git checkout html-assignments
+Switched to branch 'html-assignments'
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (html-assignments)
+$ git add .
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (html-assignments)
+$ git commit -m "added new html files"
+[html-assignments b96d864] added new html files
+ 3 files changed, 18 insertions(+)
+ create mode 100644 html file 1.txt
+ create mode 100644 html file2.txt
+ create mode 100644 html file3.txt
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (html-assignments)
+$ git status
+On branch html-assignments
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   html file3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (html-assignments)
+$ git add .
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (html-assignments)
+$ git commit -m "added new html files"
+[html-assignments 907b911] added new html files
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (html-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (master)
+$ git add .
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (master)
+$ git commit -m "added README.txt"
+[master 011cba6] added README.txt
+ 1 file changed, 1 insertion(+)
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (master)
+$ git checkout html-assignments
+Switched to branch 'html-assignments'
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (html-assignments)
+$ git add .
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (html-assignments)
+$ git commit -m "added README.txt"
+[html-assignments 8f1f097] added README.txt
+ 1 file changed, 6 insertions(+)
+ create mode 100644 html files.txt
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (html-assignments)
+$ git checkout master
+Switched to branch 'master'
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (master)
+$ git merge html-assignment
+merge: html-assignment - not something we can merge
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (master)
+$ git merge html-assignments
+Merge made by the 'recursive' strategy.
+ html file 1.txt | 6 ++++++
+ html file2.txt  | 6 ++++++
+ html file3.txt  | 6 ++++++
+ html files.txt  | 6 ++++++
+ 4 files changed, 24 insertions(+)
+ create mode 100644 html file 1.txt
+ create mode 100644 html file2.txt
+ create mode 100644 html file3.txt
+ create mode 100644 html files.txt
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/Assignments (master)
+$

@@ -1,0 +1,222 @@
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~
+$ mkdir project_dir
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~
+$ cd project_dir
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir
+$ git init
+Initialized empty Git repository in C:/Users/PRADEEPS/project_dir/.git/
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ touch index.html
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git add .
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git commit -m "added index.html"
+[master (root-commit) 157c7e8] added index.html
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ touch info.txt
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        info.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ touch .gitignore
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .gitignore
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git add .
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git commit -m "added index.html"
+[master 0155d70] added index.html
+ 2 files changed, 8 insertions(+)
+ create mode 100644 .gitignore
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git log
+commit 0155d70c102c9fb04a6a743210ac49bf98656f32 (HEAD -> master)
+Author: Pratusha16 <pratushah16@gmail.com>
+Date:   Sun Apr 11 10:03:43 2021 +0530
+
+    added index.html
+
+commit 157c7e83c9041c2a6855a08d6f10a6966dbcbb26
+Author: Pratusha16 <pratushah16@gmail.com>
+Date:   Sun Apr 11 09:49:49 2021 +0530
+
+    added index.html
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git checkout -- index.html
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git add .
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git checkout -- index.html
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git restore --staged index.html
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git checkout -- index.html
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git alias add = my_add
+git: 'alias' is not a git command. See 'git --help'.
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git congig --add alias. my_add add
+git: 'congig' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git config --add alias. my_add add
+error: wrong number of arguments, should be 2
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    --worktree            use per-worktree config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-pattern]
+    --get-all             get all values: key [value-pattern]
+    --get-regexp          get values for regexp: name-regex [value-pattern]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value-patt
+ern]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-pattern]
+    --unset-all           remove all matches: name [value-pattern]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    --fixed-value         use string equality when comparing values to 'value-pa
+ttern'
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    -t, --type <>         value is given this type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --bool-or-str         value is --bool or string
+    --path                value is a path (file or directory name)
+    --expiry-date         value is an expiry date
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, com
+mand line)
+    --show-scope          show scope of config (worktree, local, global, system,
+ command)
+    --default <value>     with --get, use default value when missing entry
+
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ add alias my_add
+bash: add: command not found
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git add alias my_add
+fatal: pathspec 'alias' did not match any files
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git config --global alias.my_add add
+error: invalid key: alias.my_add
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git config --global alias.myadd add
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git myadd index.html
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git myadd index.html
+
+PRADEEPS@DESKTOP-AVND60O MINGW64 ~/project_dir (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
