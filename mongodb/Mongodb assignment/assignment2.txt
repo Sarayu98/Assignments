@@ -1,0 +1,309 @@
+CREATE DATABASE
+
+
+db.Zipcodes.find({$and:[{"city":"ATLANTA"},{"state":"GA"}]})
+{ _id: '30346',
+  city: 'ATLANTA',
+  loc: [ -84.333354, 33.926717 ],
+  pop: 18,
+  state: 'GA' }
+{ _id: '30349',
+  city: 'ATLANTA',
+  loc: [ -84.481258, 33.605331 ],
+  pop: 48116,
+  state: 'GA' }
+{ _id: '30307',
+  city: 'ATLANTA',
+  loc: [ -84.335957, 33.769138 ],
+  pop: 16330,
+  state: 'GA' }
+{ _id: '30308',
+  city: 'ATLANTA',
+  loc: [ -84.375744, 33.771839 ],
+  pop: 8549,
+  state: 'GA' }
+{ _id: '30329',
+  city: 'ATLANTA',
+  loc: [ -84.321402, 33.823555 ],
+  pop: 17013,
+  state: 'GA' }
+{ _id: '30313',
+  city: 'ATLANTA',
+  loc: [ -84.39352, 33.76825 ],
+  pop: 8038,
+  state: 'GA' }
+{ _id: '30315',
+  city: 'ATLANTA',
+  loc: [ -84.380771, 33.705062 ],
+  pop: 41061,
+  state: 'GA' }
+{ _id: '30331',
+  city: 'ATLANTA',
+  loc: [ -84.520468, 33.72241 ],
+  pop: 38185,
+  state: 'GA' }
+{ _id: '30334',
+  city: 'ATLANTA',
+  loc: [ -84.388188, 33.74715 ],
+  pop: 0,
+  state: 'GA' }
+{ _id: '30311',
+  city: 'ATLANTA',
+  loc: [ -84.470219, 33.722957 ],
+  pop: 34880,
+  state: 'GA' }
+{ _id: '30326',
+  city: 'ATLANTA',
+  loc: [ -84.358232, 33.848168 ],
+  pop: 125,
+  state: 'GA' }
+{ _id: '30336',
+  city: 'ATLANTA',
+  loc: [ -84.510028, 33.78534 ],
+  pop: 1228,
+  state: 'GA' }
+{ _id: '30317',
+  city: 'ATLANTA',
+  loc: [ -84.31685, 33.749788 ],
+  pop: 16395,
+  state: 'GA' }
+{ _id: '30310',
+  city: 'ATLANTA',
+  loc: [ -84.423173, 33.727849 ],
+  pop: 34017,
+  state: 'GA' }
+{ _id: '30318',
+  city: 'ATLANTA',
+  loc: [ -84.445432, 33.786454 ],
+  pop: 53894,
+  state: 'GA' }
+{ _id: '30342',
+  city: 'ATLANTA',
+  loc: [ -84.376091, 33.884245 ],
+  pop: 19057,
+  state: 'GA' }
+{ _id: '30360',
+  city: 'ATLANTA',
+  loc: [ -84.271645, 33.937772 ],
+  pop: 16023,
+  state: 'GA' }
+{ _id: '30303',
+  city: 'ATLANTA',
+  loc: [ -84.388846, 33.752504 ],
+  pop: 1845,
+  state: 'GA' }
+{ _id: '30312',
+  city: 'ATLANTA',
+  loc: [ -84.378125, 33.746749 ],
+  pop: 17683,
+  state: 'GA' }
+{ _id: '30324',
+  city: 'ATLANTA',
+  loc: [ -84.354867, 33.820609 ],
+  pop: 15044,
+  state: 'GA' }
+Type "it" for more
+db.Zipcodes.aggregate({$match:{"city":"ATLANTA"}},{$group:{_id:{"pop":"$pop"}}},{$count:"total"})
+{ total: 41 }
+db.Zipcodes.aggregate({$match:{"city":"ATLANTA"}},{$count:"total"})
+{ total: 41 }
+db.Zipcodes.aggregate({$group:{_id:{"city":"$city","state":"$state","$average":{$avg:"$pop"}}},{$sort:{"average":-1}},$limit:3})
+SyntaxError: Unexpected token (1:95)
+
+> 1 | db.Zipcodes.aggregate({$group:{_id:{"city":"$city","state":"$state","$average":{$avg:"$pop"}}},{$sort:{"average":-1}},$limit:3})
+    |                                                                                                ^
+db.Zipcodes.aggregate({$group:{_id:{"city":"$city","state":"$state","$average":{$avg:"$pop"}}},{$sort:{"average":-1}},{$limit:3})
+SyntaxError: Unexpected token (1:95)
+
+> 1 | db.Zipcodes.aggregate({$group:{_id:{"city":"$city","state":"$state","$average":{$avg:"$pop"}}},{$sort:{"average":-1}},{$limit:3})
+    |                                                                                                ^
+db.Zipcodes.aggregate({$group:{_id:{"city":"$city","state":"$state","average":{$avg:"$pop"}}},{$sort:{"average":-1}},{$limit:3})
+SyntaxError: Unexpected token (1:94)
+
+> 1 | db.Zipcodes.aggregate({$group:{_id:{"city":"$city","state":"$state","average":{$avg:"$pop"}}},{$sort:{"average":-1}},{$limit:3})
+    |                                                                                               ^
+db.Zipcodes.aggregate({$group:{_id:{"city":"$city","state":"$state","average":{$avg:"$pop"}}},{$sort:{"average":-1}},{$limit:3})
+SyntaxError: Unexpected token (1:94)
+
+> 1 | db.Zipcodes.aggregate({$group:{_id:{"city":"$city","state":"$state","average":{$avg:"$pop"}}},{$sort:{"average":-1}},{$limit:3})
+    |                                                                                               ^
+db.Zipcodes.aggregate({$group:{_id:"city":"$city","statte":"$state"},"average":{$avg:"$pop"}}},{$sort:{"average":-1}},{$limit:3}})
+SyntaxError: Unexpected token, expected "," (1:41)
+
+> 1 | db.Zipcodes.aggregate({$group:{_id:"city":"$city","statte":"$state"},"average":{$avg:"$pop"}}},{$sort:{"average":-1}},{$limit:3}})
+    |                                          ^
+db.Zipcodes.aggregate({$group:{_id:"city":"$city","statte":"$state"},"average":{$avg:"$pop"}}},{$sort:{"average":-1}},{$limit:3})
+SyntaxError: Unexpected token, expected "," (1:41)
+
+> 1 | db.Zipcodes.aggregate({$group:{_id:"city":"$city","statte":"$state"},"average":{$avg:"$pop"}}},{$sort:{"average":-1}},{$limit:3})
+    |                                          ^
+db.Zipcodes.aggregate({$group:{_id:{"city":"$city","state":"$state"},"average":{$avg:"$pop"}}},{$sort:{"average":-1}},{$limit:3})
+{ _id: { city: 'BELL GARDENS', state: 'CA' }, average: 99568 }
+{ _id: { city: 'NORWALK', state: 'CA' }, average: 94188 }
+{ _id: { city: 'ARLETA', state: 'CA' }, average: 88114 }
+db.Zipcodes.aggregate({$match:{"city":"ATLANTA"}},{$match:{"state:"GA}})
+SyntaxError: Unexpected token (1:67)
+
+> 1 | db.Zipcodes.aggregate({$match:{"city":"ATLANTA"}},{$match:{"state:"GA}})
+    |                                                                    ^
+db.Zipcodes.aggregate({$match:{"city":"ATLANTA"}},{$match:{"state":"GA"}})
+{ _id: '30346',
+  city: 'ATLANTA',
+  loc: [ -84.333354, 33.926717 ],
+  pop: 18,
+  state: 'GA' }
+{ _id: '30349',
+  city: 'ATLANTA',
+  loc: [ -84.481258, 33.605331 ],
+  pop: 48116,
+  state: 'GA' }
+{ _id: '30307',
+  city: 'ATLANTA',
+  loc: [ -84.335957, 33.769138 ],
+  pop: 16330,
+  state: 'GA' }
+{ _id: '30308',
+  city: 'ATLANTA',
+  loc: [ -84.375744, 33.771839 ],
+  pop: 8549,
+  state: 'GA' }
+{ _id: '30329',
+  city: 'ATLANTA',
+  loc: [ -84.321402, 33.823555 ],
+  pop: 17013,
+  state: 'GA' }
+{ _id: '30313',
+  city: 'ATLANTA',
+  loc: [ -84.39352, 33.76825 ],
+  pop: 8038,
+  state: 'GA' }
+{ _id: '30315',
+  city: 'ATLANTA',
+  loc: [ -84.380771, 33.705062 ],
+  pop: 41061,
+  state: 'GA' }
+{ _id: '30331',
+  city: 'ATLANTA',
+  loc: [ -84.520468, 33.72241 ],
+  pop: 38185,
+  state: 'GA' }
+{ _id: '30334',
+  city: 'ATLANTA',
+  loc: [ -84.388188, 33.74715 ],
+  pop: 0,
+  state: 'GA' }
+{ _id: '30311',
+  city: 'ATLANTA',
+  loc: [ -84.470219, 33.722957 ],
+  pop: 34880,
+  state: 'GA' }
+{ _id: '30326',
+  city: 'ATLANTA',
+  loc: [ -84.358232, 33.848168 ],
+  pop: 125,
+  state: 'GA' }
+{ _id: '30336',
+  city: 'ATLANTA',
+  loc: [ -84.510028, 33.78534 ],
+  pop: 1228,
+  state: 'GA' }
+{ _id: '30317',
+  city: 'ATLANTA',
+  loc: [ -84.31685, 33.749788 ],
+  pop: 16395,
+  state: 'GA' }
+{ _id: '30310',
+  city: 'ATLANTA',
+  loc: [ -84.423173, 33.727849 ],
+  pop: 34017,
+  state: 'GA' }
+{ _id: '30318',
+  city: 'ATLANTA',
+  loc: [ -84.445432, 33.786454 ],
+  pop: 53894,
+  state: 'GA' }
+{ _id: '30342',
+  city: 'ATLANTA',
+  loc: [ -84.376091, 33.884245 ],
+  pop: 19057,
+  state: 'GA' }
+{ _id: '30360',
+  city: 'ATLANTA',
+  loc: [ -84.271645, 33.937772 ],
+  pop: 16023,
+  state: 'GA' }
+{ _id: '30303',
+  city: 'ATLANTA',
+  loc: [ -84.388846, 33.752504 ],
+  pop: 1845,
+  state: 'GA' }
+{ _id: '30312',
+  city: 'ATLANTA',
+  loc: [ -84.378125, 33.746749 ],
+  pop: 17683,
+  state: 'GA' }
+{ _id: '30324',
+  city: 'ATLANTA',
+  loc: [ -84.354867, 33.820609 ],
+  pop: 15044,
+  state: 'GA' }
+Type "it" for more
+db.Zipcodes.aggregate({$group:{_id:{"state":"$state"},"total":{$sum:"$pop"}}},{$sort:{total:-1}})
+{ _id: { state: 'CA' }, total: 29754890 }
+{ _id: { state: 'NY' }, total: 17990402 }
+{ _id: { state: 'TX' }, total: 16984601 }
+{ _id: { state: 'FL' }, total: 12686644 }
+{ _id: { state: 'PA' }, total: 11881643 }
+{ _id: { state: 'IL' }, total: 11427576 }
+{ _id: { state: 'OH' }, total: 10846517 }
+{ _id: { state: 'MI' }, total: 9295297 }
+{ _id: { state: 'NJ' }, total: 7730188 }
+{ _id: { state: 'NC' }, total: 6628637 }
+{ _id: { state: 'GA' }, total: 6478216 }
+{ _id: { state: 'VA' }, total: 6181479 }
+{ _id: { state: 'MA' }, total: 6016425 }
+{ _id: { state: 'IN' }, total: 5544136 }
+{ _id: { state: 'MO' }, total: 5110648 }
+{ _id: { state: 'WI' }, total: 4891769 }
+{ _id: { state: 'TN' }, total: 4876457 }
+{ _id: { state: 'WA' }, total: 4866692 }
+{ _id: { state: 'MD' }, total: 4781379 }
+{ _id: { state: 'MN' }, total: 4372982 }
+Type "it" for more
+it
+{ _id: { state: 'LA' }, total: 4217595 }
+{ _id: { state: 'AL' }, total: 4040587 }
+{ _id: { state: 'KY' }, total: 3675484 }
+{ _id: { state: 'AZ' }, total: 3665228 }
+{ _id: { state: 'SC' }, total: 3486703 }
+{ _id: { state: 'CO' }, total: 3293755 }
+{ _id: { state: 'CT' }, total: 3287116 }
+{ _id: { state: 'OK' }, total: 3145585 }
+{ _id: { state: 'OR' }, total: 2842321 }
+{ _id: { state: 'IA' }, total: 2776420 }
+{ _id: { state: 'MS' }, total: 2573216 }
+{ _id: { state: 'KS' }, total: 2475285 }
+{ _id: { state: 'AR' }, total: 2350725 }
+{ _id: { state: 'WV' }, total: 1793146 }
+{ _id: { state: 'UT' }, total: 1722850 }
+{ _id: { state: 'NE' }, total: 1578139 }
+{ _id: { state: 'NM' }, total: 1515069 }
+{ _id: { state: 'ME' }, total: 1226648 }
+{ _id: { state: 'NV' }, total: 1201833 }
+{ _id: { state: 'NH' }, total: 1109252 }
+Type "it" for more
+db.Zipcodes.aggregate({$group:{_id:{"state":"$state"},"total":{$sum:"$pop"}}},{$sort:{total:-1}}{$limit:3})
+SyntaxError: Unexpected token, expected "," (1:96)
+
+> 1 | db.Zipcodes.aggregate({$group:{_id:{"state":"$state"},"total":{$sum:"$pop"}}},{$sort:{total:-1}}{$limit:3})
+    |                                                                                                 ^
+db.Zipcodes.aggregate({$group:{_id:{"state":"$state"},"total":{$sum:"$pop"}}},{$sort:{total:-1}}{$limit:3}})
+SyntaxError: Unexpected token, expected "," (1:96)
+
+> 1 | db.Zipcodes.aggregate({$group:{_id:{"state":"$state"},"total":{$sum:"$pop"}}},{$sort:{total:-1}}{$limit:3}})
+    |                                                                                                 ^
+db.Zipcodes.aggregate({$group:{_id:{"state":"$state"},"total":{$sum:"$pop"}}},{$sort:{total:-1}},{$limit:3})
+{ _id: { state: 'CA' }, total: 29754890 }
+{ _id: { state: 'NY' }, total: 17990402 }
+{ _id: { state: 'TX' }, total: 16984601 }
+Enterprise atlas-12w3ox-shard-0 [primary]
